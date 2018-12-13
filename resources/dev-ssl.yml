@@ -1,0 +1,5 @@
+Type: "AWS::CertificateManager::Certificate"
+Properties:
+  DomainName: "first-portfolio.${self:custom.rootDomain}"
+  SubjectAlternativeNames:
+    - "www.first-portfolio.${self:custom.rootDomain}"
