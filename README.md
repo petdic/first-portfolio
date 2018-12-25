@@ -1,9 +1,62 @@
 # first-portfolio
 
-## Project setup
+## Create project
 ```
-npm install
+vue create "name"
 ```
+
+## Add bootstrap
+```
+npm i bootstrap-vue
+
+at app entry points add:
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+Vue.use(BootstrapVue);
+```
+
+## Add serverless file
+```
+copy serverless files across:
+bin
+resources
+serverless.yml
+```
+
+## Configure serverless files
+```
+change project name
+configure dns and ssl
+```
+
+## Deploy serverless
+```
+sls deploy -s dev 
+or 
+sls deploy -s prod
+```
+
+## Check certificate manager
+```
+resend certificate
+accept certificate in email
+this can take as long as 30 mins
+``` 
+## Compile vue application
+```
+npm run build
+```
+
+## Upload to dist file to S3 bucket
+```
+run bash ./bin/deploy_static_files.sh
+```
+## Project build complete
+
+
+## Vue application 
 
 ### Compiles and hot-reloads for development
 ```
