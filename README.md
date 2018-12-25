@@ -10,6 +10,7 @@ vue create "name"
 npm i bootstrap-vue
 
 at app entry points add:
+
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -20,9 +21,12 @@ Vue.use(BootstrapVue);
 ## Add serverless file
 ```
 copy serverless files across:
+
 bin
 resources
 serverless.yml
+
+and configure .gitignore
 ```
 
 ## Configure serverless files
@@ -51,10 +55,14 @@ npm run build
 
 ## Upload to dist file to S3 bucket
 ```
-run bash ./bin/deploy_static_files.sh
+bash ./bin/deploy_static_files.sh
 ```
 ## Project build complete
-
+```
+Vue application should be available on the web
+```
+```
+```
 
 ## Vue application 
 
