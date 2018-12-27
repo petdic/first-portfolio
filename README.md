@@ -36,6 +36,7 @@ and configure .gitignore
 ```
 change project name
 configure dns and ssl
+change delete and deploy information in bin
 ```
 
 ## Deploy serverless
